@@ -8,6 +8,11 @@
     src: url('../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('../fonts/Roboto_Mono/static/RobotoMono-Regular.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -77,8 +82,7 @@ body {
             background: #34495E;
             overflow-x: auto;
             p {
-                font-family: monospace;
-                font-style: italic;
+                font-family: 'Roboto Mono';
                 margin: 0px 1px;
             }
 
