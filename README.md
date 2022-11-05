@@ -11,5 +11,3 @@
 
 <p>Iniciar proyecto en modo desarrollo</p>
 <pre><code>npm run dev</code></pre>
-
-<style>code {font-family: monospace}</style>
