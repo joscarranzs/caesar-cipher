@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    font-size: 17px;
+    background: #17202A;
+    color: #CCD1D1;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 600px;
+        padding: 10px;
+        border-radius: 5px;
+        background: #2C3E50;
+
+        .content-title {
+            margin-bottom: 10px;
+            h1 {
+                font-size: 20px;
+                font-weight: normal;
+                color: white;
+            }
+        }
+
+        .content-input {
+            margin-bottom: 20px;
+            input {
+                font-family: 'Poppins';
+                width: 250px;
+                height: 30px;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                background: #212F3D;
+                color: #EAEDED;
+
+                &::placeholder {
+                    color: rgba($color: #ffffff, $alpha: 0.3);
+                }
+            }
+        }
+
+        .content-output {
+            display: flex;
+            align-items: center;
+            width: 400px;
+            height: 50px;
+            padding: 10px;
+            border-radius: 5px;
+            background: #34495E;
+            overflow-x: auto;
+            p {
+                font-family: monospace;
+                font-style: italic;
+                margin: 0px 1px;
+            }
+
+            p:nth-child(2) {
+                font-family: 'Poppins';
+                font-size: 15px;
+                font-style: normal;
+                color: rgba($color: #ffffff, $alpha: 0.3);
+            }
+
+            &::-webkit-scrollbar {
+                height: 5px;
+                background: #212F3D;
+                border-radius: 5px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                width: 5px;
+                height: 2px;
+                background: rgba($color: #ffffff, $alpha: 0.3);
+                border-radius: 5px;
+            }
+        }
+    }
+}
